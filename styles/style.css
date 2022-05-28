@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&display=swap');
+
+:root {
+    --primary: rgb(237, 241, 241);
+    --secondary: rgb(228, 228, 218);
+    --green: #45EBA5;
+    --green2: #1D566E;
+    --red: #F05454;
+    --red2: #FFB5B5;
+    --grey: grey;
+    --grey2: #bebcbc;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+#display_image {
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    outline-style: dashed;
+    padding: 5rem 0;
+    background-color: var(--secondary);
+
+}
+
+img {
+    object-fit: cover;
+
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+}
+
+form {
+    padding: 2rem 0;
+    align-items: center;
+    background-color: var(--secondary);
+    width: 300px;
+}
+
+label {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 7px 7px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: var(--green);
+    color: var(--green2);
+    border: none;
+    cursor: pointer;
+
+}
+
+button:hover {
+    transform: scale(0.98);
+}
+
+table {
+    border-collapse: separate;
+}
+
+th,
+td {
+    border: 1px solid var(--grey);
+    padding: 5px 15px;
+}
+
+thead {
+    background-color: var(--grey2);
+}
+
+.btn-delete {
+    color: var(--red);
+    background-color: var(--red2);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+img,
+#batman {
+    transition: 0.5s ease-in-out;
+}

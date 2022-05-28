@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
+    <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+    <title>Productos |</title>
+</head>
+
+<body onload="loadSound();">
+    <div class="container">
+        <form id="form">
+            <h1>Producto</h1>
+            <div>
+                <label for="dato1">Código</label><br>
+                <input type="number" min="1" id="dato1" placeholder="Ingrese un código" required>
+            </div>
+            <div>
+                <label for="dato2">Nombre</label><br>
+                <input type="text" id="dato2" placeholder="Nombre del producto" required>
+            </div>
+            <div>
+                <label for="dato3">Color</label><br>
+                <input type="text" id="dato3" placeholder="Color" required>
+            </div>
+            <div>
+                <label for="dato4">Peso</label><br>
+                <input type="number" min="1" id="dato4" placeholder="Peso Kg" required>
+            </div>
+            <div>
+                <label for="dato5">Cantidad de productos</label><br>
+                <input type="number" min="1" id="dato5" placeholder="Unidades" required>
+            </div>
+
+            <button type="submit" onclick="playSound2()">Guardar</button>
+        </form>
+
+        <div id="listar">
+            <h2>Lista de productos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Color</th>
+                        <th>Peso</th>
+                        <th>Cantidad</th>
+                        <!-- <th>Imagen</th> -->
+                        <th>Acción</th>
+                    </tr>
+                <tbody id="listarProductos"></tbody>
+                <th id="total"></th>
+                </thead>
+            </table>
+        </div>
+        <div>
+            <a href="https://www.netflix.com/co/" target="_blank">
+                <button onclick="playSound2()">Página favorita</button>
+            </a>
+        </div>
+        <div>
+            <div>
+                <img src="/assets/batman.jpg" alt="Batman-Arkham-Knight" style="width: 300px" id="batman">
+            </div>
+            <button type="button" id="btn" onclick="ampliar(), playSound()">Ampliar imagen</button>
+        </div>
+        <div>
+            <input type="file" id="file" onclick="playSound2()" accept="image/jpg, image/png, image/jpeg">
+            <div id="display_image" width="200px"></div>
+        </div>
+    </div>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
